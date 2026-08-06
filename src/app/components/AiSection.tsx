@@ -75,7 +75,7 @@ export default function AiSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-[#11111a] tracking-tight mb-4">
-                        How Diffco helps you<br />deliver the best results
+                        How Tech Drive helps you<br />deliver the best results
                     </h2>
                 </div>
 

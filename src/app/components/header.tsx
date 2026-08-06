@@ -9,11 +9,11 @@ export default function Header() {
 
     return (
         <header className="w-full relative z-50">
-            <div className="w-full h-16 md:h-20 bg-white rounded-full mt-4 md:mt-6 mx-auto max-w-[1400px] flex items-center justify-between px-4 md:px-8 shadow-sm">
+            <div className="w-full h-16 md:h-20 bg-white rounded-full mt-2 md:mt-4 mx-auto max-w-[1400px] flex items-center justify-between px-4 md:px-8 shadow-sm">
                 {/* Left side: Logo */}
-                <div className="w-32 md:w-40 h-full flex items-center">
+                <div className=" h-full flex items-center">
                     <Link href="/">
-                        <Image src="/img/logo.png" alt="Logo" width={150} height={50} className="w-auto h-6 md:h-8 object-contain" priority />
+                        <Image src="/img/logo.png" alt="Logo" width={300} height={150} className="w-auto h-10  object-contain" priority />
                     </Link>
                 </div>
 
