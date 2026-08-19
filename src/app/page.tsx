@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from './components/header';
 import AiSection from './components/AiSection';
 import WhyTechDrive from './components/WhyTechDrive';
+import ImpactSection from './components/ImpactSection';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
@@ -57,10 +58,10 @@ export default function Home() {
 
   return (
     <div className="text-white flex flex-col items-center font-sans w-full">
-      <div className="w-full sticky top-0 z-50 px-4 pt-2 pb-2">
+      <div className="w-full sticky top-0 z-[90] px-4 pt-2 pb-2">
         <Header />
       </div>
-      
+
       <div className="w-full px-4 flex flex-col items-center">
         <Reveal delay={0.2}>
           <div className="w-full mt-6 md:mt-10 max-w-[1400px] mx-auto flex-1 flex items-center">
@@ -168,6 +169,9 @@ export default function Home() {
       </Reveal>
       <Reveal>
         <WhyTechDrive />
+      </Reveal>
+      <Reveal>
+        <ImpactSection />
       </Reveal>
       <Reveal>
         <CallToAction />

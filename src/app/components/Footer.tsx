@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#040b16] relative text-white">
       <div className="max-w-[1400px] mx-auto px-4 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Column 1: Brand & Info */}
-          <div className="lg:col-span-2 flex flex-col pr-8">
+          <div className="flex flex-col">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <Image src="/img/white-logo.png" alt="Tech Drive Agency" width={300} height={150} className="w-auto h-12 object-contain" />
             </Link>
 
-            <p className="text-gray-300 text-[15px] leading-relaxed mb-8 max-w-[250px]">
+            <p className="text-gray-300 text-[15px] leading-relaxed mb-8">
               AI and data today, value and solutions tomorrow.
             </p>
 
@@ -40,48 +40,38 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: SERVICES */}
+          {/* Column 2: LEGAL */}
           <div className="flex flex-col">
-            <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">SERVICES</h3>
+            <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">LEGAL</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">AI & Automation</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Data Science</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Digital Engineering</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Staffing & Talent</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Training & Enablement</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">View all Services</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Terms & Conditions</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Cookie Policy</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Disclaimer</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Accessibility Statement</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: COMPANY */}
-          <div className="flex flex-col">
-            <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">COMPANY</h3>
-            <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">How It Works</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Careers / Join Our Team</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Contact</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 4: RESOURCES */}
+          {/* Column 3: RESOURCES */}
           <div className="flex flex-col">
             <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">RESOURCES</h3>
             <ul className="flex flex-col gap-3">
               <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Case Studies</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Industries</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Success Stories</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Downloads</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">White Papers</Link></li>
             </ul>
           </div>
 
-          {/* Column 5: GET STARTED */}
+          {/* Column 4: COMPANY */}
           <div className="flex flex-col">
-            <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">GET STARTED</h3>
+            <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">COMPANY</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Book a Consultation</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Request a Proposal</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Media Kit & Partnerships</Link></li>
+              <li><Link href="/about" className="text-gray-300 text-[15px] hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/work" className="text-gray-300 text-[15px] hover:text-white transition-colors">Our Work</Link></li>
+              <li><Link href="/careers" className="text-gray-300 text-[15px] hover:text-white transition-colors">Careers</Link></li>
+              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -91,11 +81,6 @@ export default function Footer() {
           <p className="text-gray-400 text-[14px]">
             © 2026 Tech Drive Agency. All rights reserved.
           </p>
-          <div className="flex items-center gap-8">
-            <Link href="#" className="text-gray-400 text-[14px] hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-gray-400 text-[14px] hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="#" className="text-gray-400 text-[14px] hover:text-white transition-colors">Security</Link>
-          </div>
         </div>
       </div>
     </footer>
