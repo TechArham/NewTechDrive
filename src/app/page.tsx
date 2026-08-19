@@ -9,6 +9,8 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import Reveal from './components/Reveal';
 
+// Metadata will be handled by layout.tsx for the home page
+
 const services = [
   {
     id: 1,
@@ -73,7 +75,7 @@ export default function Home() {
                   <div
                     key={service.id}
                     onClick={() => !isActive && setActiveService(index)}
-                    className={`relative rounded-4xl overflow-hidden transition-all duration-700 ease-in-out cursor-pointer group ${isActive ? 'flex-1' : 'h-[80px] lg:h-auto lg:w-[100px] hover:h-[90px] lg:hover:w-[110px]'
+                    className={`relative rounded-4xl overflow-hidden transition-all duration-700 ease-in-out cursor-pointer group ${isActive ? 'flex-1' : 'h-[80px] lg:h-auto lg:w-[100px]'
                       }`}
                   >
                     {/* Background Image */}

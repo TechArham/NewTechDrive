@@ -1,0 +1,10 @@
+# robots.txt for TechDrive
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://techdrive.com/sitemap.xml
+
+# Disallow specific paths if needed
+# Disallow: /admin/
+# Disallow: /api/

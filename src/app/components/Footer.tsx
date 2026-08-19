@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="flex flex-col">
             <h3 className="text-white font-bold text-[13px] tracking-wider uppercase mb-6">LEGAL</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Terms & Conditions</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Cookie Policy</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Disclaimer</Link></li>
-              <li><Link href="#" className="text-gray-300 text-[15px] hover:text-white transition-colors">Accessibility Statement</Link></li>
+              <li><Link href="/privacy" className="text-gray-300 text-[15px] hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-gray-300 text-[15px] hover:text-white transition-colors">Terms & Conditions</Link></li>
+              <li><Link href="/cookies" className="text-gray-300 text-[15px] hover:text-white transition-colors">Cookie Policy</Link></li>
+              <li><Link href="/disclaimer" className="text-gray-300 text-[15px] hover:text-white transition-colors">Disclaimer</Link></li>
+              <li><Link href="/accessibility" className="text-gray-300 text-[15px] hover:text-white transition-colors">Accessibility Statement</Link></li>
             </ul>
           </div>
 
