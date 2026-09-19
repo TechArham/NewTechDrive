@@ -3,11 +3,11 @@ import ServicesContent from './ServicesContent';
 
 export const metadata: Metadata = {
   title: "Our Services - Software Engineering, AI & Product Design Solutions",
-  description: "Comprehensive technology solutions: Software Engineering, Product Design, Data Science & AI, and Consulting. Transform your business with scalable, innovative digital solutions and expert guidance.",
-  keywords: ["software engineering services", "product design", "AI solutions", "data science", "machine learning", "consulting", "cloud architecture", "UX UI design", "digital transformation"],
+  description: "Comprehensive technology solutions: Software Engineering, Product Design, AI & Automation, and Interior Design. Transform your business with scalable, innovative digital solutions and expert guidance.",
+  keywords: ["software engineering services", "product design", "AI solutions", "AI automation", "machine learning", "interior design", "AutoCAD", "3D visualization", "UX UI design", "digital transformation"],
   openGraph: {
     title: "TechDrive Services - Complete Technology Solutions Portfolio",
-    description: "Discover our full range of services: Software Engineering, Product Design, AI & Data Science, and Strategic Consulting.",
+    description: "Discover our full range of services: Software Engineering, Product Design, AI & Automation, and Interior Design.",
     url: "https://techdrive.com/services",
     images: [
       {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TechDrive Services - Complete Technology Solutions Portfolio",
-    description: "Discover our full range of services: Software Engineering, Product Design, AI & Data Science, and Strategic Consulting.",
+    description: "Discover our full range of services: Software Engineering, Product Design, AI & Automation, and Interior Design.",
     images: ["/img/hero-slide-1.png"],
   },
   alternates: {

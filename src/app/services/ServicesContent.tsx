@@ -41,35 +41,35 @@ const services = [
   },
   {
     id: 'ai',
-    title: 'Data Science & AI',
-    tagline: 'Intelligence That Transforms Business',
-    description: 'Leverage predictive models, generative AI, and intelligent automation to gain more valuable insights, facilitate your decisions, and boost your business value.',
+    title: 'AI & Automation',
+    tagline: 'Intelligent Automation at Scale',
+    description: 'Leverage intelligent automation, machine learning, and AI-powered workflows to streamline operations, accelerate decisions, and unlock new business value.',
     image: '/img/hero-slide-3.png',
     features: [
+      'Intelligent Process Automation',
       'Machine Learning Models',
       'Natural Language Processing',
       'Computer Vision',
-      'Predictive Analytics',
-      'AI Automation',
-      'Big Data Processing'
+      'AI-Powered Workflows',
+      'Predictive Analytics'
     ],
-    technologies: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Apache Spark', 'BigQuery']
+    technologies: ['Python', 'TensorFlow', 'PyTorch', 'LangChain', 'Apache Spark', 'OpenAI API']
   },
   {
-    id: 'consulting',
-    title: 'Consulting',
-    tagline: 'Strategic Guidance for Digital Success',
-    description: 'We help you define product strategy, validate ideas, and select the right architecture and tools, ensuring your investments are aligned with long-term growth.',
+    id: 'interior',
+    title: 'Interior Design',
+    tagline: 'Spaces Designed with Precision & Vision',
+    description: 'From concept to construction-ready drawings, we deliver detailed 2D & 3D interior designs, AutoCAD plans, and full spatial visualization for residential and commercial spaces.',
     image: '/img/hero-slide-4.webp',
     features: [
-      'Digital Transformation',
-      'Technology Assessment',
-      'Architecture Design',
-      'Product Strategy',
-      'Technical Due Diligence',
-      'Team Augmentation'
+      '2D Floor Plans & Layouts',
+      '3D Interior Visualization',
+      'AutoCAD Technical Drawings',
+      'Space Planning & Optimization',
+      'Material & Finish Specification',
+      'Residential & Commercial Design'
     ],
-    technologies: ['AWS', 'Azure', 'GCP', 'Enterprise Architecture', 'Agile', 'Scrum']
+    technologies: ['AutoCAD', '3ds Max', 'SketchUp', 'Revit', 'V-Ray', 'Lumion']
   }
 ];
 

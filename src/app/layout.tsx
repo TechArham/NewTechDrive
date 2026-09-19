@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     default: "TechDrive - Digital Transformation & Software Engineering Solutions",
     template: "%s | TechDrive"
   },
-  description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and consulting services. Transform your business with scalable, cutting-edge digital solutions.",
-  keywords: ["software engineering", "product design", "AI solutions", "data science", "consulting", "digital transformation", "cloud computing", "web development", "mobile apps", "machine learning"],
+  description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and interior design services. Transform your business with scalable, cutting-edge digital solutions.",
+  keywords: ["software engineering", "product design", "AI solutions", "AI automation", "interior design", "AutoCAD", "3D visualization", "digital transformation", "cloud computing", "web development", "mobile apps", "machine learning"],
   authors: [{ name: "TechDrive" }],
   creator: "TechDrive",
   publisher: "TechDrive",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: "https://techdrive.com",
     siteName: "TechDrive",
     title: "TechDrive - Digital Transformation & Software Engineering Solutions",
-    description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and consulting services.",
+    description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and interior design services.",
     images: [
       {
         url: "/img/hero-slide-1.png",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TechDrive - Digital Transformation & Software Engineering Solutions",
-    description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and consulting services.",
+    description: "Leading technology partner delivering innovative software engineering, product design, AI solutions, and interior design services.",
     images: ["/img/hero-slide-1.png"],
     creator: "@techdrive",
   },

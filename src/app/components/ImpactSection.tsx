@@ -2,55 +2,78 @@
 
 import React from 'react';
 
-const stats = [
+const steps = [
   {
     id: 1,
-    value: '500+',
-    label: 'Projects Delivered',
-    description: 'Successfully completed projects across industries',
+    step: '01',
+    title: 'Discover & Define',
+    description:
+      'We start by understanding your business, your users, and the problem you actually need to solve — before a single line of code is written.',
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
     ),
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-blue-500 to-cyan-500',
+    lightColor: 'from-blue-50 to-cyan-50',
   },
   {
     id: 2,
-    value: '98%',
-    label: 'Client Satisfaction',
-    description: 'Clients rate us excellent or outstanding',
+    step: '02',
+    title: 'Design & Plan',
+    description:
+      'We map out architecture, user flows, and a realistic delivery plan. No surprises down the road — you see the full picture before work begins.',
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
       </svg>
     ),
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-violet-500 to-purple-500',
+    lightColor: 'from-violet-50 to-purple-50',
   },
   {
     id: 3,
-    value: '150+',
-    label: 'Expert Team Members',
-    description: 'Skilled professionals ready to work',
+    step: '03',
+    title: 'Build & Iterate',
+    description:
+      'We work in short cycles with regular check-ins, so you can see progress, give feedback, and course-correct early — not at the end.',
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
       </svg>
     ),
-    color: 'from-orange-500 to-red-500'
+    color: 'from-orange-500 to-amber-500',
+    lightColor: 'from-orange-50 to-amber-50',
   },
   {
     id: 4,
-    value: '15+',
-    label: 'Years Experience',
-    description: 'Building digital solutions since 2009',
+    step: '04',
+    title: 'Launch & Support',
+    description:
+      'Shipping is the start, not the finish. We stay engaged after launch to monitor, refine, and help you grow from a solid foundation.',
     icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
       </svg>
     ),
-    color: 'from-green-500 to-emerald-500'
-  }
+    color: 'from-green-500 to-emerald-500',
+    lightColor: 'from-green-50 to-emerald-50',
+  },
+];
+
+const values = [
+  {
+    title: 'Honesty over comfort',
+    description: "We'll tell you when a scope is too broad or a deadline isn't realistic — because surprises late in a project cost everyone more.",
+  },
+  {
+    title: 'Quality by default',
+    description: 'Clean code, accessible interfaces, and secure practices are built in from day one, not bolted on at the end.',
+  },
+  {
+    title: 'Your goals, our compass',
+    description: 'Every decision we make is measured against what actually moves the needle for your business.',
+  },
 ];
 
 export default function ImpactSection() {
@@ -67,79 +90,85 @@ export default function ImpactSection() {
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-block mb-5">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-sm md:text-base font-bold tracking-[0.2em] uppercase">
-              Our Impact
+              How We Work
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-[52px] font-bold text-[#11111a] tracking-tight leading-[1.15] mb-6">
-            Trusted by Companies
+            A process built around
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-              Around the World
+              your outcomes
             </span>
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            We've helped hundreds of businesses transform their digital presence and achieve remarkable results.
+            From first conversation to post-launch, every step is designed to keep you informed, in control, and confident in the work.
           </p>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {stats.map((stat, index) => (
+        {/* Process Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20 md:mb-24">
+          {steps.map((step, index) => (
             <div
-              key={stat.id}
+              key={step.id}
               className="group relative bg-white rounded-[32px] p-8 md:p-10 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.18)] transition-all duration-500 border border-gray-100/50 hover:border-transparent hover:-translate-y-3"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient overlay on hover */}
-              <div className={`absolute inset-0 rounded-[32px] bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+              <div className={`absolute inset-0 rounded-[32px] bg-gradient-to-br ${step.lightColor} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+
+              {/* Step number */}
+              <div className="relative mb-5 flex items-center justify-between">
+                <span className={`text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br ${step.color} opacity-20 group-hover:opacity-40 transition-opacity duration-500 leading-none`}>
+                  {step.step}
+                </span>
+                {/* Connector dot for desktop */}
+                {index < steps.length - 1 && (
+                  <div className="hidden lg:block absolute -right-10 top-1/2 -translate-y-1/2 w-4 h-4 z-20">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-br ${step.color} opacity-40`}></div>
+                  </div>
+                )}
+              </div>
 
               {/* Icon */}
-              <div className={`relative mb-6 w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
-                {stat.icon}
+              <div className={`relative mb-6 w-14 h-14 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-white shadow-md transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                {step.icon}
               </div>
 
-              {/* Value */}
-              <div className="relative mb-3">
-                <h3 className={`text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br ${stat.color} leading-none`}>
-                  {stat.value}
-                </h3>
-              </div>
-
-              {/* Label */}
-              <h4 className="text-xl md:text-2xl font-bold text-[#11111a] mb-3 leading-tight">
-                {stat.label}
-              </h4>
+              {/* Title */}
+              <h3 className="relative text-xl md:text-2xl font-bold text-[#11111a] mb-3 leading-tight">
+                {step.title}
+              </h3>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed">
-                {stat.description}
+              <p className="relative text-gray-600 text-sm md:text-[15px] leading-relaxed">
+                {step.description}
               </p>
 
               {/* Decorative line */}
-              <div className={`mt-6 h-1 w-12 rounded-full bg-gradient-to-r ${stat.color} transform group-hover:w-20 transition-all duration-500`}></div>
-
-              {/* Shine effect */}
-              <div className="absolute inset-0 rounded-[32px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              </div>
+              <div className={`relative mt-6 h-1 w-10 rounded-full bg-gradient-to-r ${step.color} transform group-hover:w-16 transition-all duration-500`}></div>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 md:mt-20 text-center">
-          <p className="text-gray-600 text-base md:text-lg mb-6">
-            Join hundreds of satisfied clients who trust Tech Drive
-          </p>
-          <a 
-            href="#" 
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-full shadow-[0_8px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_12px_40px_rgba(59,130,246,0.4)] transition-all duration-300 hover:scale-105 transform group"
-          >
-            <span>Start Your Project Today</span>
-            <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
+        {/* Values strip */}
+        <div className="bg-white rounded-[32px] border border-gray-100 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.06)] px-8 md:px-12 py-10 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="md:col-span-1 flex flex-col justify-center">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 text-sm font-bold tracking-[0.2em] uppercase mb-3 block">
+              Our Values
+            </span>
+            <h3 className="text-2xl md:text-3xl font-bold text-[#11111a] leading-snug">
+              Principles that guide every decision we make
+            </h3>
+          </div>
+          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="flex flex-col gap-2">
+                <div className="w-8 h-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-1"></div>
+                <h4 className="text-base font-bold text-[#11111a] leading-snug">{value.title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

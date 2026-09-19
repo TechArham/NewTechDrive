@@ -28,15 +28,15 @@ const services = [
   },
   {
     id: 3,
-    title: 'DATA SCIENCE & AI',
-    description: 'Leverage predictive models, generative AI, and intelligent automation to gain more valuable insights, facilitate your decisions, and boost your business value.',
+    title: 'AI & AUTOMATION',
+    description: 'Leverage intelligent automation, machine learning, and AI-powered workflows to streamline operations, accelerate decisions, and unlock new business value.',
     image: '/img/hero-slide-3.png',
     link: '#'
   },
   {
     id: 4,
-    title: 'CONSULTING',
-    description: 'We help you define product strategy, validate ideas, and select the right architecture and tools, ensuring your investments are aligned with long-term growth.',
+    title: 'INTERIOR DESIGN',
+    description: 'From concept to construction-ready drawings, we deliver detailed 2D & 3D interior designs, AutoCAD plans, and full spatial visualization for residential and commercial spaces.',
     image: '/img/hero-slide-3.png',
     link: '#'
   }
@@ -53,7 +53,7 @@ const badges = [
 
 export default function Home() {
 
-  const [activeService, setActiveService] = useState(2); // Default to Data Science & AI
+  const [activeService, setActiveService] = useState(2); // Default to AI & Automation
 
   const nextService = () => setActiveService((prev) => (prev === services.length - 1 ? 0 : prev + 1));
   const prevService = () => setActiveService((prev) => (prev === 0 ? services.length - 1 : prev - 1));
@@ -141,18 +141,18 @@ export default function Home() {
 
                     {/* Content for Collapsed Panel */}
                     <div
-                      className={`absolute inset-0 flex flex-row lg:flex-col items-center justify-start lg:justify-between px-6 lg:px-0 py-0 lg:py-10 transition-opacity duration-500 ${!isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                      className={`absolute inset-0 flex flex-row lg:flex-col items-center justify-start lg:justify-center px-6 lg:px-0 py-0 overflow-hidden transition-opacity duration-500 ${!isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
                         }`}
                     >
-                      <div className="hidden lg:flex w-12 h-12 rounded-full bg-[#1a1a24]/80 items-center justify-center group-hover:bg-white group-hover:text-black transition-colors">
+                      <div className="hidden lg:flex w-12 h-12 rounded-full bg-[#1a1a24]/80 items-center justify-center group-hover:bg-white group-hover:text-black transition-colors shrink-0 absolute top-6">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                       </div>
 
-                      <div className="flex-1 flex items-center lg:items-end lg:pb-8 w-full">
+                      <div className="flex-1 flex items-center justify-center w-full h-full">
                         <h3
-                          className="text-lg lg:text-xl font-bold tracking-wider uppercase whitespace-nowrap text-white/90 lg:[writing-mode:vertical-rl] lg:rotate-180"
+                          className="text-lg lg:text-xl font-bold tracking-wider uppercase text-white/90 lg:[writing-mode:vertical-rl] lg:rotate-180 max-h-[80%] overflow-hidden text-ellipsis"
                         >
                           {service.title}
                         </h3>

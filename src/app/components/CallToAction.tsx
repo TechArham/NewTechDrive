@@ -29,10 +29,10 @@ export default function CallToAction() {
 
         {/* Main Heading */}
         <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white mb-6 tracking-tight leading-[1.1]">
-          Ready to Build Your
+          Let's Build Something
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-            Dream Team?
+            Great Together
           </span>
         </h2>
 

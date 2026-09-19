@@ -5,8 +5,8 @@ import React from 'react';
 const cards = [
     {
         id: 1,
-        title: 'Product-Oriented',
-        subtitle: 'Approach',
+        title: 'Product-Oriented Approach',
+        subtitle: '',
         description: 'We think like product owners, not just vendors. We research your users, challenge assumptions, and help you prioritize features that move the metrics that matter.',
         icon: (
             <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -21,12 +21,12 @@ const cards = [
     },
     {
         id: 2,
-        title: 'AI-First by',
-        subtitle: 'Default',
-        description: 'Every project runs on our Production-Ready AI Engineering practice — senior engineers paired with AI agents, shipping faster without lowering the bar. AI is the engine, not the marketing.',
+        title: 'Good Experts',
+        subtitle: '',
+        description: 'We work exclusively with senior specialists who bring deep domain expertise, sharp problem-solving skills, and a track record of delivering at the highest level.',
         icon: (
             <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 <circle cx="16" cy="16" r="4" fill="white" stroke="none" />
                 <path d="M14.5 16l1 1 2-2" stroke="#4252da" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -37,8 +37,8 @@ const cards = [
     },
     {
         id: 3,
-        title: 'Clear',
-        subtitle: 'Communication',
+        title: 'Clear Communication',
+        subtitle: '',
         description: 'We build relationships on integrity and trust, with transparent processes and proactive communication at every stage of the work.',
         icon: (
             <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,8 +53,8 @@ const cards = [
     },
     {
         id: 4,
-        title: 'Customer-Centric',
-        subtitle: 'Approach',
+        title: 'Customer-Centric Approach',
+        subtitle: '',
         description: 'We start from your business goals, not our tech stack, and deliver tailored solutions that drive measurable impact for your team and customers.',
         icon: (
             <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,17 +94,17 @@ export default function AiSection() {
                         </span>
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                        We combine product thinking, AI-powered engineering, and transparent communication to deliver exceptional outcomes.
+                        We combine product thinking, top-tier expertise, and transparent communication to deliver exceptional outcomes.
                     </p>
                 </div>
 
                 {/* Cards Grid */}
-                <div className="flex flex-col md:flex-row justify-center items-stretch md:items-start gap-6 md:gap-0 mt-12 md:mt-20 perspective-1000">
+                <div className="flex flex-col md:flex-row justify-center items-stretch md:items-start gap-6 mt-12 md:mt-20">
                     {cards.map((card, index) => (
                         <div
                             key={card.id}
                             className={`
-                                group relative flex-1 w-full md:min-w-[280px] md:max-w-[340px] mx-auto md:mx-[-8px] 
+                                group relative flex-1 w-full md:min-w-[260px] md:max-w-[320px] mx-auto
                                 rounded-[32px] overflow-hidden
                                 shadow-[0_8px_30px_rgb(0,0,0,0.12)] 
                                 transition-all duration-500 ease-out cursor-pointer
@@ -137,11 +137,10 @@ export default function AiSection() {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-3xl md:text-4xl font-bold mb-2 leading-tight text-white">
-                                    {card.title}
-                                </h3>
-                                <h3 className="text-3xl md:text-4xl font-bold mb-6 leading-tight text-white/90">
-                                    {card.subtitle}
+                                <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-white break-words">
+                                    {card.title.split(' ').slice(0, Math.ceil(card.title.split(' ').length / 2)).join(' ')}
+                                    <br />
+                                    <span className="text-white/90">{card.title.split(' ').slice(Math.ceil(card.title.split(' ').length / 2)).join(' ')}</span>
                                 </h3>
 
                                 {/* Description */}

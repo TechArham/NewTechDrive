@@ -36,8 +36,7 @@ const projects = [
   {
     id: 3,
     title: 'AI-Powered Analytics Dashboard',
-    category: 'DATA SCIENCE & AI',
-    description: 'Created an intelligent analytics platform using machine learning to predict customer behavior and optimize marketing campaigns.',
+    category: 'AI & AUTOMATION',
     image: '/img/hero-slide-3.png',
     tags: ['Python', 'TensorFlow', 'React', 'BigQuery'],
     metrics: {
@@ -49,7 +48,7 @@ const projects = [
   {
     id: 4,
     title: 'Enterprise Resource Planning',
-    category: 'CONSULTING',
+    category: 'INTERIOR DESIGN',
     description: 'Architected and implemented a comprehensive ERP system for a Fortune 500 company, streamlining operations across 15 departments.',
     image: '/img/hero-slide-1.png',
     tags: ['SAP', 'Oracle', 'Integration', 'Cloud'],
@@ -75,7 +74,7 @@ const projects = [
   {
     id: 6,
     title: 'Smart City IoT Platform',
-    category: 'DATA SCIENCE & AI',
+    category: 'AI & AUTOMATION',
     description: 'Built an IoT ecosystem for smart city infrastructure management with real-time monitoring and predictive maintenance.',
     image: '/img/hero-slide-3.png',
     tags: ['IoT', 'Edge Computing', 'AI', 'Cloud'],
@@ -87,7 +86,7 @@ const projects = [
   }
 ];
 
-const categories = ['ALL', 'SOFTWARE ENGINEERING', 'PRODUCT DESIGN', 'DATA SCIENCE & AI', 'CONSULTING'];
+const categories = ['ALL', 'SOFTWARE ENGINEERING', 'PRODUCT DESIGN', 'AI & AUTOMATION', 'INTERIOR DESIGN'];
 
 export default function Work() {
   const [selectedCategory, setSelectedCategory] = useState('ALL');

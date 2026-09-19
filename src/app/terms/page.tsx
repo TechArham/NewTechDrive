@@ -58,8 +58,8 @@ export default function Terms() {
                 <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
                   <li>Software engineering and development services</li>
                   <li>Product design and user experience services</li>
-                  <li>Data science and AI solutions</li>
-                  <li>Technology consulting services</li>
+                  <li>AI & automation solutions</li>
+                  <li>2D & 3D interior design services</li>
                   <li>Related professional services</li>
                 </ul>
                 <p className="text-gray-700 leading-relaxed">

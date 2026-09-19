@@ -88,28 +88,22 @@ export default function WhyTechDrive() {
           {cards.map((card, index) => (
             <div
               key={card.id}
-              className="group relative bg-white rounded-[28px] p-8 md:p-10 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] transition-all duration-500 flex flex-col border border-gray-100/50 hover:border-blue-200/50 hover:-translate-y-2"
+              className="group relative bg-white rounded-[28px] p-8 md:p-10 shadow-[0_4px_24px_-6px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] transition-all duration-500 flex flex-col border border-gray-100 hover:border-blue-200/50 hover:-translate-y-2 overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient overlay on hover */}
               <div className={`absolute inset-0 rounded-[28px] bg-gradient-to-br ${card.gradient} ${card.hoverGradient} opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
 
               {/* Content */}
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col items-center text-center">
                 {/* Icon container */}
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100 group-hover:from-blue-100 group-hover:to-indigo-200 flex items-center justify-center mb-8 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-sm">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-100 group-hover:from-blue-100 group-hover:to-indigo-200 flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-sm shrink-0">
                   {card.icon}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-[23px] md:text-[24px] font-bold leading-snug mb-4 text-[#111827] group-hover:text-[#0f172a] transition-colors">
-                  {card.title.includes('partner') ? (
-                    <>
-                      One partner,<br />every capability
-                    </>
-                  ) : (
-                    card.title
-                  )}
+                <h3 className="text-[22px] md:text-[23px] font-bold leading-snug mb-4 text-[#111827] group-hover:text-[#0f172a] transition-colors">
+                  {card.title}
                 </h3>
 
                 {/* Description */}
