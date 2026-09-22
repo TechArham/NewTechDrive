@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ─────────────────────────────────────────
-#  TechDrive — VPS Deploy Script
+#  TechDrive — VPS Deploy Script (rsync)
 #  Server : root@168.231.126.204
 #  Path   : /var/www/NewTechDrive
 # ─────────────────────────────────────────
@@ -11,35 +11,35 @@ set -e
 REMOTE_USER="root"
 REMOTE_HOST="168.231.126.204"
 REMOTE_PATH="/var/www/NewTechDrive"
+LOCAL_PATH="/Users/user/Desktop/slider"
 
 echo "🚀 Deploying to $REMOTE_HOST..."
 
-ssh $REMOTE_USER@$REMOTE_HOST bash << 'EOF'
+# ── 1. rsync diye file transfer (.env, .next, node_modules bady) ──
+echo "📤 Transferring files..."
+rsync -avz --progress \
+  --exclude='.env' \
+  --exclude='.env.*' \
+  --exclude='.next/' \
+  --exclude='node_modules/' \
+  --exclude='.git/' \
+  --exclude='.DS_Store' \
+  --exclude='*.tsbuildinfo' \
+  --exclude='next-env.d.ts' \
+  "$LOCAL_PATH/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH/"
+
+# ── 2. VPS-a giye install + build + restart ──
+echo "🔧 Running remote commands..."
+ssh $REMOTE_USER@$REMOTE_HOST bash << EOF
   set -e
+  cd $REMOTE_PATH
 
-  PROJECT_DIR="/var/www/NewTechDrive"
-
-  # ── 1. Repo clone kora na thakle ──
-  if [ ! -d "$PROJECT_DIR/.git" ]; then
-    echo "📦 Cloning repository..."
-    git clone https://github.com/TechArham/NewTechDrive.git $PROJECT_DIR
-  fi
-
-  cd $PROJECT_DIR
-
-  # ── 2. Latest code pull ──
-  echo "⬇️  Pulling latest code..."
-  git pull origin main
-
-  # ── 3. Dependencies install (.env, .next, node_modules bady) ──
   echo "📥 Installing dependencies..."
   npm install --omit=dev
 
-  # ── 4. Build ──
   echo "🔨 Building..."
   npm run build
 
-  # ── 5. PM2 diye restart (na thakle start) ──
   echo "♻️  Restarting app with PM2..."
   if pm2 list | grep -q "techdrive"; then
     pm2 restart techdrive
